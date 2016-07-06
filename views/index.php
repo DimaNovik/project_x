@@ -36,16 +36,22 @@
 	 		
 	 		<div class="col-sm-8 col-xs-8 col-md-4">
 	 			<div class="login-form">
-	 			<p align="center">Оберіть контролера для завантаження завдання</p>
-	 				<form action="#" method="post">
-	 						
-	 					<select name="select_counter">
-	 						<option>Іванов В.В</option>
-	 						<option>Сідоров А.П</option>
-	 						<option>Пупкін А.С.</option>
-	 					</select>
-	 					<input type="submit" name="load_data" value="Завантажити завдання">
-	 				</form>
+	 			<p>Тест получения данных из JSON</p>
+	 				<?
+	 					$jsondata = file_get_contents("tasks.json");
+	 					$json = json_decode($jsondata, true);
+
+	 					$output = "<ul>";
+
+	 					foreach ($json['tasks'] as $task) {
+	 						$output .= "<li>".$task['number']."</li>";
+	 						$output .= "<li>".$task['date']."</li>";
+	 						$output .= "<li>".$task['count']."</li>";
+	 					}
+
+	 					$output .= "</ul>";
+	 					echo $output;
+	 				?>
 	 			</div>
 	 		</div>
 	 		
