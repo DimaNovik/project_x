@@ -1,9 +1,6 @@
-<?
-/*
-$domenName = getenv("REMOTE_ADDR");
+<?php
 
-echo $domenName;*/
+//запускаю загрузчик
+define("Q_PATH",dirname(__FILE__));
 
-echo "Fuck";
-
-?>
+include Q_PATH.'/application/bootstrap.php';
