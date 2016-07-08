@@ -1,3 +1,135 @@
 body {
-    background-color: #1b6d85;
+    background-color: #e6e6e4;
 }
+
+/*-- Style for Login-Form--*/
+
+.position-login-form {
+    margin-top: 50%;
+}
+
+#slick-login {
+    width: 100%;
+
+}
+
+#slick-login label {
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333;
+    text-transform: uppercase;
+
+}
+
+#slick-login select {
+    width: 100%;
+    height: 60px;
+    font-family: "Open Sans";
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#password {
+    width: 100%;
+    height: 60px;
+    font-family: "Open Sans";
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+
+}
+
+#submit {
+    width: 60%;
+    height: 60px;
+    font-family: "Open Sans";
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #ff0000;
+    border-radius: 10px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+#submit:hover {
+    width: 60%;
+    height: 60px;
+    font-family: "Open Sans";
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #fd7474;
+    border-radius: 10px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+/*-- Style for page Load_tasks--*/
+
+.info_card {
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 10px;
+    -webkit-box-shadow: 17px 18px 26px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: 17px 18px 26px -12px rgba(0,0,0,0.75);
+    box-shadow: 17px 18px 26px -12px rgba(0,0,0,0.75);
+}
+
+.info_card img {
+    width: 90px;
+    float: left;
+    margin: 5px 5px;
+}
+
+.info_card p {
+    font-family: "Open Sans";
+    font-size: 18px;
+    margin-right: 5px;
+    padding-top: 0.1px;
+}
+
+.list_tasks {
+    font-family: Calibri;
+    font-weight: bold;
+    font-size: 34px;
+    text-transform: uppercase;
+    margin-top: 70px;
+}
+
+hr {
+    width: 70%;
+    background-color: #ff0000;
+    height: 2px;
+    margin-left: 0px;
+    margin-top: -5px;
+}
+
+.load_gif {
+    width: 20%;
+}
+
+
+#load_tasks {
+    width: 100%;
+}
+
+#submit_load {
+    width: 80%;
+    height: 60px;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #ff0000;
+    border-radius: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+

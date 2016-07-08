@@ -11,10 +11,10 @@
     <title>Контрольные обходы</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="application/views/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="application/views/css/bootstrap-grid-3.3.1.min.css">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="application/views/css/main.css" />
+    <link rel="stylesheet" href="application/views/css/main.css">
 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -28,14 +28,28 @@
 <body>
 
 <div class="container">
-    <div class="row">
-        <div class="col-lg-2 col-sm-2">
+    <div class="row position-login-form">
+        <div class="col-xs-2 col-sm-2 col-md-3 col-lg-3">
 
         </div>
 
-        <div class="col-lg-6 col-lg-6 col-sm-6">
+        <div class="col-xs-8 col-sm-8 col-md-6 col-lg-6">
 
-            <h1>Привет <?php echo $data[0]; ?>! <a href="tasks"/>pflfybz</a></h1>
+            <form id="slick-login" action="/load_tasks" method="post">
+                <p><label for="clerkname">Оберіть контролера:</label></p>
+                    <select name="clerkname" class="placeholder">
+                        <option>Гуцул Л.Б.</option>
+                        <option>Яценко В.А.</option>
+                    </select>
+                <p><label for="password">Пароль:</label></p>
+                    <input type="password" name="password" id="password" placeholder="Введіть Ваш пароль">
+                    <p align="center"><input type="submit" id="submit" value="УВІЙТИ"></p>
+            </form>
+
+
+        </div>
+
+        <div class="col-xs-2 col-sm-2 col-md-3 col-lg-3">
 
         </div>
     </div>
@@ -48,6 +62,8 @@
 
 <!-- Bootstrap Core JavaScript -->
 <script src="application/views/js/bs.js"></script>
+
+
 
 </body>
 
