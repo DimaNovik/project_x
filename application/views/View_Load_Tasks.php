@@ -42,7 +42,7 @@
                     </p>
 
                     <p align="right"><b>Доброго дня, Гуцул Л.Б.</b></p>
-                    <p align="right"><b>Сьогодні:</b> <?=date(d.m.Y);?></p>
+                    <p align="right"><b>Сьогодні:</b> <? date_default_timezone_set('Europe/Kiev'); echo date('d.m.Y'); ?></p>
                 </div>
 
             </div>
