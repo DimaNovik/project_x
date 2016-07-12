@@ -36,13 +36,15 @@
 
             <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
 
-                <div class="info_card">
+                <div class="info_card_abonents">
                     <p>
                         <img src="application/views/img/users.png" />
                     </p>
 
                     <p align="right"><b>Доброго дня, Гуцул Л.Б.</b></p>
-                    <p align="right"><b>Сьогодні:</b> <? date_default_timezone_set('Europe/Kiev'); echo date('d.m.Y'); ?></p>
+                    <p align="right"><b>№ завдання:</b> 20160606_123125</p>
+                    <p align="right"><b>Дата формування:</b> 07.06.2016</p>
+                    <p align="right"><b>Кількість абонентів для обробки:</b> <span class="count_tasks">25</span></p>
                 </div>
 
             </div>
@@ -55,31 +57,42 @@
 
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <h2 class="list_tasks">Список завдань:<hr/></h2>
+            <h2 class="list_tasks">Перелік абонентів:<hr/></h2>
         </div>
     </div>
 
     <div class="row">
+
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-           <p align="center"><img src="application/views/img/loading.gif" class="load_gif"/></p>
-        </div>
-    </div>
 
-    <div class="row">
-        <div class="col-xs-2 col-sm-2 col-md-3 col-lg-3">
-
-        </div>
-
-        <div class="col-xs-8 col-sm-8 col-md-6 col-lg-6">
-
-            <form id="load_tasks" action="/tasks" method="post">
-                <p align="center"><input type="submit" id="submit_load" value="Завантажити завдання"></p>
-            </form>
+                    <?php
 
 
-        </div>
+           	 					$jsondata = file_get_contents("application/json/16_06062016_tasks.json");
+           	 					$json = json_decode($jsondata, true);
 
-        <div class="col-xs-2 col-sm-2 col-md-3 col-lg-3">
+                      $output = "<div class='all_tasks'>";
+                      $output .= "<ul>";
+
+           	 					foreach ($json['16_06062016_tasks'] as $task) {
+
+                        $output .= "<a href='/add_counts'><div class='link_tasks_abonents'>";
+
+           	 						$output .= "<li><b>Ос. рахунок:</b> 0/4900</li>";
+           	 						$output .= "<li><b>ПІБ споживача:</b> Григорашенко Оксана Николаевна</li>";
+                        $output .= "<li><b>Адреса споживача:</b> Ананьев, Пушкина ул, 25 кв.</li>";
+                        $output .= "<li><b>Зона:</b> 1</li>";
+           	 						$output .= "<li class='cyrcle_count_abonents'><span>+</span></li>";
+
+                        $output .= "</div></a>";
+
+           	 					}
+
+                      $output .= "</ul>";
+                      $output .= "</div>";
+
+           	 					echo $output;
+           	 				?>
 
         </div>
     </div>

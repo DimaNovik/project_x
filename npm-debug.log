@@ -1,0 +1,126 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'i',
+1 verbose cli   'gulp',
+1 verbose cli   '-g' ]
+2 info using npm@3.7.3
+3 info using node@v5.8.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 silly fetchPackageMetaData gulp
+8 silly fetchNamedPackageData gulp
+9 silly mapToRegistry name gulp
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry http://registry.npmjs.org/
+12 silly mapToRegistry uri http://registry.npmjs.org/gulp
+13 verbose request uri http://registry.npmjs.org/gulp
+14 verbose request no auth needed
+15 info attempt registry request try #1 at 14:04:53
+16 verbose request id c31855398778cd00
+17 http request GET http://registry.npmjs.org/gulp
+18 http 404 http://registry.npmjs.org/gulp
+19 verbose bad json <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+19 verbose bad json <html><head>
+19 verbose bad json <title>404 Not Found</title>
+19 verbose bad json </head><body>
+19 verbose bad json <h1>Not Found</h1>
+19 verbose bad json <p>The requested URL /gulp was not found on this server.</p>
+19 verbose bad json <p>Additionally, a 406 Not Acceptable
+19 verbose bad json error was encountered while trying to use an ErrorDocument to handle the request.</p>
+19 verbose bad json </body></html>
+20 error registry error parsing json
+21 verbose headers { date: 'Mon, 11 Jul 2016 11:04:54 GMT',
+21 verbose headers   server: 'Apache/2.4.10 (Win32)',
+21 verbose headers   alternates: '{"HTTP_NOT_FOUND.html.var" 1 {type text/html} {charset utf-8} {language cs} {length 736}}, {"HTTP_NOT_FOUND.html.var" 1 {type text/html} {charset utf-8} {language de} {length 796}}, {"HTTP_NOT_FOUND.html.var" 1 {type text/html} {charset utf-8} {language en} {length 639}}, {"HTTP_NOT_FOUND.html.var" 1 {type text/html} {language es} {length 727}}, {"HTTP_NOT_FOUND.html.var" 1 {type text/html} {charset utf-8} {language fr} {length 820}}, {"HTTP_NOT_FOUND.html.var" 1 {type text/html} {charset utf-8} {language ga} {length 843}}, {"HTTP_NOT_FOUND.html.var" 1 {type text/html} {charset utf-8} {language it} {length 721}}, {"HTTP_NOT_FOUND.html.var" 1 {type text/html} {charset utf-8} {language ja} {length 781}}, {"HTTP_NOT_FOUND.html.var" 1 {type text/html} {charset utf-8} {language ko} {length 785}}, {"HTTP_NOT_FOUND.html.var" 1 {type text/html} {charset utf-8} {language nl} {length 717}}, {"HTTP_NOT_FOUND.html.var" 1 {type text/html} {charset utf-8} {language pl} {length 751}}, {"HTTP_NOT_FOUND.html.var" 1 {type text/html} {charset utf-8} {language pt-br} {length 782}}, {"HTTP_NOT_FOUND.html.var" 1 {type text/html} {charset iso-8859-1} {language pt} {length 279}}, {"HTTP_NOT_FOUND.html.var" 1 {type text/html} {charset utf-8} {language ro} {length 718}}, {"HTTP_NOT_FOUND.html.var" 1 {type text/html} {charset utf-8} {language sr} {length 904}}, {"HTTP_NOT_FOUND.html.var" 1 {type text/html} {charset utf-8} {language sv} {length 751}}, {"HTTP_NOT_FOUND.html.var" 1 {type text/html} {charset utf-8} {language tr} {length 681}}',
+21 verbose headers   vary: 'accept-language,accept-charset',
+21 verbose headers   'content-length': '326',
+21 verbose headers   'keep-alive': 'timeout=10, max=100',
+21 verbose headers   connection: 'Keep-Alive',
+21 verbose headers   'content-type': 'text/html; charset=iso-8859-1' }
+22 silly get cb [ 404,
+22 silly get   { date: 'Mon, 11 Jul 2016 11:04:54 GMT',
+22 silly get     server: 'Apache/2.4.10 (Win32)',
+22 silly get     alternates: '{"HTTP_NOT_FOUND.html.var" 1 {type text/html} {charset utf-8} {language cs} {length 736}}, {"HTTP_NOT_FOUND.html.var" 1 {type text/html} {charset utf-8} {language de} {length 796}}, {"HTTP_NOT_FOUND.html.var" 1 {type text/html} {charset utf-8} {language en} {length 639}}, {"HTTP_NOT_FOUND.html.var" 1 {type text/html} {language es} {length 727}}, {"HTTP_NOT_FOUND.html.var" 1 {type text/html} {charset utf-8} {language fr} {length 820}}, {"HTTP_NOT_FOUND.html.var" 1 {type text/html} {charset utf-8} {language ga} {length 843}}, {"HTTP_NOT_FOUND.html.var" 1 {type text/html} {charset utf-8} {language it} {length 721}}, {"HTTP_NOT_FOUND.html.var" 1 {type text/html} {charset utf-8} {language ja} {length 781}}, {"HTTP_NOT_FOUND.html.var" 1 {type text/html} {charset utf-8} {language ko} {length 785}}, {"HTTP_NOT_FOUND.html.var" 1 {type text/html} {charset utf-8} {language nl} {length 717}}, {"HTTP_NOT_FOUND.html.var" 1 {type text/html} {charset utf-8} {language pl} {length 751}}, {"HTTP_NOT_FOUND.html.var" 1 {type text/html} {charset utf-8} {language pt-br} {length 782}}, {"HTTP_NOT_FOUND.html.var" 1 {type text/html} {charset iso-8859-1} {language pt} {length 279}}, {"HTTP_NOT_FOUND.html.var" 1 {type text/html} {charset utf-8} {language ro} {length 718}}, {"HTTP_NOT_FOUND.html.var" 1 {type text/html} {charset utf-8} {language sr} {length 904}}, {"HTTP_NOT_FOUND.html.var" 1 {type text/html} {charset utf-8} {language sv} {length 751}}, {"HTTP_NOT_FOUND.html.var" 1 {type text/html} {charset utf-8} {language tr} {length 681}}',
+22 silly get     vary: 'accept-language,accept-charset',
+22 silly get     'content-length': '326',
+22 silly get     'keep-alive': 'timeout=10, max=100',
+22 silly get     connection: 'Keep-Alive',
+22 silly get     'content-type': 'text/html; charset=iso-8859-1' } ]
+23 silly fetchPackageMetaData SyntaxError: Unexpected token <
+23 silly fetchPackageMetaData <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+23 silly fetchPackageMetaData <html><head>
+23 silly fetchPackageMetaData <title>404 Not Found</title>
+23 silly fetchPackageMetaData </head><body>
+23 silly fetchPackageMetaData <h1>Not Found</h1>
+23 silly fetchPackageMetaData <p>The requested URL /gulp was not found on this server.</p>
+23 silly fetchPackageMetaData <p>Additionally, a 406 Not Acceptable
+23 silly fetchPackageMetaData error was encountered while trying to use an ErrorDocument to handle the request.</p>
+23 silly fetchPackageMetaData </body></html>
+23 silly fetchPackageMetaData
+23 silly fetchPackageMetaData     at Object.parse (native)
+23 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:199:23)
+23 silly fetchPackageMetaData     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:172:14)
+23 silly fetchPackageMetaData     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:199:22)
+23 silly fetchPackageMetaData     at emitTwo (events.js:100:13)
+23 silly fetchPackageMetaData     at Request.emit (events.js:185:7)
+23 silly fetchPackageMetaData     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1036:10)
+23 silly fetchPackageMetaData     at emitOne (events.js:95:20)
+23 silly fetchPackageMetaData     at Request.emit (events.js:182:7)
+23 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:963:12)
+23 silly fetchPackageMetaData  error for gulp [SyntaxError: Unexpected token <
+23 silly fetchPackageMetaData <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+23 silly fetchPackageMetaData <html><head>
+23 silly fetchPackageMetaData <title>404 Not Found</title>
+23 silly fetchPackageMetaData </head><body>
+23 silly fetchPackageMetaData <h1>Not Found</h1>
+23 silly fetchPackageMetaData <p>The requested URL /gulp was not found on this server.</p>
+23 silly fetchPackageMetaData <p>Additionally, a 406 Not Acceptable
+23 silly fetchPackageMetaData error was encountered while trying to use an ErrorDocument to handle the request.</p>
+23 silly fetchPackageMetaData </body></html>
+23 silly fetchPackageMetaData ]
+24 silly rollbackFailedOptional Starting
+25 silly rollbackFailedOptional Finishing
+26 silly runTopLevelLifecycles Starting
+27 silly runTopLevelLifecycles Finishing
+28 silly install printInstalled
+29 verbose stack SyntaxError: Unexpected token <
+29 verbose stack <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+29 verbose stack <html><head>
+29 verbose stack <title>404 Not Found</title>
+29 verbose stack </head><body>
+29 verbose stack <h1>Not Found</h1>
+29 verbose stack <p>The requested URL /gulp was not found on this server.</p>
+29 verbose stack <p>Additionally, a 406 Not Acceptable
+29 verbose stack error was encountered while trying to use an ErrorDocument to handle the request.</p>
+29 verbose stack </body></html>
+29 verbose stack
+29 verbose stack     at Object.parse (native)
+29 verbose stack     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:199:23)
+29 verbose stack     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:172:14)
+29 verbose stack     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:199:22)
+29 verbose stack     at emitTwo (events.js:100:13)
+29 verbose stack     at Request.emit (events.js:185:7)
+29 verbose stack     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1036:10)
+29 verbose stack     at emitOne (events.js:95:20)
+29 verbose stack     at Request.emit (events.js:182:7)
+29 verbose stack     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:963:12)
+30 verbose cwd D:\OpenServerDemaar\domains\projectx
+31 error Windows_NT 10.0.10240
+32 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "i" "gulp" "-g"
+33 error node v5.8.0
+34 error npm  v3.7.3
+35 error Unexpected token <
+35 error <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+35 error <html><head>
+35 error <title>404 Not Found</title>
+35 error </head><body>
+35 error <h1>Not Found</h1>
+35 error <p>The requested URL /gulp was not found on this server.</p>
+35 error <p>Additionally, a 406 Not Acceptable
+35 error error was encountered while trying to use an ErrorDocument to handle the request.</p>
+35 error </body></html>
+36 error If you need help, you may report this error at:
+36 error     <https://github.com/npm/npm/issues>
+37 verbose exit [ 1, true ]
