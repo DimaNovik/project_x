@@ -30,11 +30,11 @@
 <!-- container for info_card -->
     <div class="container">
         <div class="row">
-            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
 
             </div>
 
-            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+            <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
 
                 <div class="info_card">
                     <p>
@@ -56,6 +56,7 @@
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <h2 class="list_tasks">Список завдань:<hr/></h2>
+
         </div>
     </div>
 

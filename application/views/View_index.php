@@ -37,13 +37,26 @@
 
             <form id="slick-login" action="/load_tasks" method="post">
                 <p><label for="clerkname">Оберіть контролера:</label></p>
-                    <select name="clerkname" class="placeholder">
-                        <option>Гуцул Л.Б.</option>
-                        <option>Яценко В.А.</option>
-                    </select>
+
+                    <?
+                      // выбераем список из json файла всех пользователей в выпадающий список
+                      $jsondata = file_get_contents("application/json/users.json");
+                      $json = json_decode($jsondata, true);
+
+                      $output = "<select name='clerkname' class='placeholder'>";
+
+                          foreach ($json['clerks_data'] as $clerk) {
+
+                              $output .= "<option value='$clerk[clerk_id]'>".$clerk['clerk_name']."</option>";
+                          }
+
+                      $output .= "</select>";
+
+                      echo $output;
+                    ?>
                 <p><label for="password">Пароль:</label></p>
                     <input type="password" name="password" id="password" placeholder="Введіть Ваш пароль">
-                    <p align="center"><input type="submit" id="submit" value="УВІЙТИ"></p>
+                    <p align="center"><input type="submit" id="submit" name="submit" value="УВІЙТИ"></p>
             </form>
 
 

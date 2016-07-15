@@ -30,11 +30,7 @@
 <!-- container for info_card -->
     <div class="container">
         <div class="row">
-            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-
-            </div>
-
-            <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
                 <div class="info_card_add">
                     <p>
@@ -68,7 +64,7 @@
 
           <form id="add_count" action="/" method="post">
 
-              <p align='left'><label for="visibility1">Не виконано</label>
+              <p align='left'><label for="visibility1">Не виконано:</label>
               <input type="checkbox" name="visibility" id="visibility1" /></p>
 
 
@@ -83,6 +79,7 @@
                       <option value="8">Підозра на крадіжку</option>
                   </select>
 
+              <br/>
               <p><label for="date_count" id="label_date">Дата зняття показників:</label></br>
               <input type="date" name="date_count" id='date_count'></p>
 
@@ -90,10 +87,11 @@
               <input type="number" name="count_zone_1" id='count_zone_1'></p>
 
               <p><label for="desc" id="label_desc">Примітка:</label></br>
-              <textarea type="" name="desc" id="desc" cols="44" rows=""></textarea></p>
+              <textarea type="" name="desc" id="desc"></textarea></p>
 
-              <label for="visibility2" id="label_visibility2">Попереджений</label>
-              <input type="checkbox" name="warning" id="visibility2"/>
+              <br/>
+              <p><label for="visibility2" id="label_visibility2">Попереджений:</label>
+              <input type="checkbox" name="warning" id="visibility2"/></p>
 
               <p align="center"><input type="submit" id="submit" value="ЗАНЕСТИ ПОКАЗНИКИ"></p>
           </form>

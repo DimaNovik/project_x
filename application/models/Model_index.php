@@ -3,11 +3,13 @@
 class Model_index extends Model {
 
     function __construct() {
-        
+
     }
-    
-    public function getName() {
-        return array('Robot');
+
+    public function getClerkName() {
+
+
     }
+
 
 }

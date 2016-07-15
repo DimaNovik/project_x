@@ -73,7 +73,7 @@ body {
 
 .info_card {
     width: 100%;
-    height: 100px;
+    height: 110px;
     background-color: #fff;
     border-radius: 10px;
     -webkit-box-shadow: 17px 18px 26px -12px rgba(0,0,0,0.75);
@@ -84,12 +84,12 @@ body {
 .info_card img {
     width: 90px;
     float: left;
-    margin: 5px 5px;
+    margin: 10px 5px;
 }
 
 .info_card p {
     font-family: "Open Sans";
-    font-size: 14px;
+    font-size: 16px;
     margin-right: 5px;
     padding-top: 0.1px;
 }
@@ -136,7 +136,7 @@ hr {
 /*-- Style for View_tasks--*/
 .info_card_view {
     width: 100%;
-    height: 110px;
+    height: 120px;
     background-color: #fff;
     border-radius: 10px;
     -webkit-box-shadow: 17px 18px 26px -12px rgba(0,0,0,0.75);
@@ -147,12 +147,12 @@ hr {
 .info_card_view img {
     width: 90px;
     float: left;
-    margin: 5px 5px;
+    margin: 15px 5px;
 }
 
 .info_card_view p {
     font-family: "Open Sans";
-    font-size: 14px;
+    font-size: 16px;
     margin-right: 5px;
     padding-top: 0.1px;
 }
@@ -225,7 +225,7 @@ background-color: #fd7474;
 
 .info_card_abonents {
     width: 100%;
-    height: 150px;
+    height: 165px;
     background-color: #fff;
     border-radius: 10px;
     -webkit-box-shadow: 17px 18px 26px -12px rgba(0,0,0,0.75);
@@ -241,7 +241,7 @@ background-color: #fd7474;
 
 .info_card_abonents p {
     font-family: "Open Sans";
-    font-size: 14px;
+    font-size: 16px;
     margin-right: 5px;
     padding-top: 0.1px;
 }
@@ -287,7 +287,7 @@ background-color: #fd7474;
 
 .info_card_add {
     width: 100%;
-    height: 180px;
+    height: 195px;
     background-color: #fff;
     border-radius: 10px;
     -webkit-box-shadow: 17px 18px 26px -12px rgba(0,0,0,0.75);
@@ -298,12 +298,12 @@ background-color: #fd7474;
 .info_card_add img {
     width: 90px;
     float: left;
-    margin: 45px 5px;
+    margin: 50px 5px;
 }
 
 .info_card_add p {
     font-family: "Open Sans";
-    font-size: 14px;
+    font-size: 16px;
     margin-right: 5px;
     padding-top: 0.1px;
 }
@@ -344,19 +344,13 @@ background-color: #fd7474;
 
 #add_count textarea {
     width: 100%;
-    height: 60px;
+    height: 100px;
     font-family: "Open Sans";
     font-size: 18px;
     font-weight: bold;
     text-align: left;
     border-radius: 10px;
     padding: 5px;
-}
-
-#add_count input[type="checkbox"] {
-    height: 25px;
-    border-radius: 10px;
-
 }
 
 #add_count submit {
@@ -387,14 +381,10 @@ background-color: #fd7474;
 
 #visibility1 {
   margin-top: -50px;
-  margin-left: -100px;
-}
-
-#label_visibility2 {
-  float:left;
+  margin-left: -50px;
 }
 
 #visibility2 {
-  margin-top: -50px;
-  margin-left: -100px;
+  margin-top: -40px;
+  margin-left: -50px;
 }
